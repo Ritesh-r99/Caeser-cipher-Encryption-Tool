@@ -56,38 +56,22 @@ The Caesar Cipher tool is implemented in Python and follows these steps:
 3. **Wrapping**: If the shifted value exceeds the range of the alphabet (either uppercase or lowercase), the algorithm wraps around to the beginning of the alphabet.
 4. **Output**: The resulting encrypted or decrypted message is displayed to the user.
 
-## **Code Snippet**
-
-Here’s a simple look at the encryption function:
-```python
-def caesar_cipher(text, shift):
-    result = ""
-    
-    for char in text:
-        if char.isalpha():
-            shift_amount = shift % 26
-            ascii_offset = 65 if char.isupper() else 97
-            result += chr((ord(char) - ascii_offset + shift_amount) % 26 + ascii_offset)
-        else:
-            result += char
-    return result
-```
 
 ## **How to Run the Tool**
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/Ritesh-r99/caeser-cipher.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd <repo-name>
+   cd caeser-cipher
    ```
 
 3. Run the Python script:
    ```bash
-   python caesar_cipher.py
+   python caesar-cipher.py
    ```
 
 ## **Conclusion**
